@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel = "icon" href =  "images/myblog.png" type = "image/x-icon">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon -->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+	<header id="fh5co-header">
+		
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="media">
+		          <p>Blog designed by Guy Ulrich © 2022</p>
+		        </div>
+				<div class="col-lg-12 col-md-12 text-center">
+					<h1 id="fh5co-logo"><a href="index.html">My  Blog <sup><img src="images/myblog.png" style="max-width:80px;"></sup></a></h1>
+				</div>
+
+			</div>
+		
+		</div>
+
+	</header>
+	<div class="container-fluid">
+		<div class="row fh5co-post-entry single-entry">
+			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+				<figure class="animate-box">
+					<img src="images/e1.jpg" alt="Image" class="img-responsive">
+					<figcaption>Picture by <a href="https://docs.soliditylang.org/en/v0.8.14/">Solidity</a> is the official logotype.</a></figcaption>
+				</figure>
+				<span class="fh5co-meta animate-box">Web3</span>
+				<h2 class="fh5co-article-title animate-box"><a href="index.html">How to create a multisig wallet?</a></h2>
+				<span class="fh5co-meta fh5co-date animate-box">May 23th, 2022</span>
+				
+				<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+					<div class="row">
+						<div class="col-lg-8 cp-r animate-box">
+							<h2></h2>
+							<p>This is a type of wallet that can only send ether if multiple ethereum adresses agree or review the transaction with a signature. This means that is needed more than one key to authorize the transaction in the blockchian. In terms of security having multiple keys upgrades the protection of the wallet, so if you hold significant amount of cryptocurrency you should consider the idea of using multiple keys. In this section we are going to see how can we make this possible with solidity.</p>
+						</div>
+						<div class="col-lg-4 animate-box">
+							<div class="fh5co-highlight right">
+								<h4>Note</h4>
+								<p>Approver are addresses that validate each transfer made by the wallet.</p>
+							</div>
+						</div>
+					</div>
+				<div class="col-md-12 animate-box">
+							<h2>Approvers</h2>
+							<p>First we add the aprovers identified by the addresses. Then we need a function to get all the approvers.</p>
+				</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e2.png" alt="" class="img-responsive">
+								<figcaption>Declaring the approvers</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e3.png" alt="" class="img-responsive">
+								<figcaption>Function to get them</figcaption>
+							</figure>
+						</div>
+				<div class="col-md-12 animate-box">
+							<h2>Transfer</h2>
+							<p>This is for when we want to suggest a new trasnfer of ether to be done.</p>
+				</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e4.png" alt="" class="img-responsive">
+								<figcaption>Definining struct and fields</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e5.png" alt="" class="img-responsive">
+								<figcaption>Mapping from integer to transfer</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e6.png" alt="" class="img-responsive">
+								<figcaption>Create Transfer</figcaption>
+							</figure>
+						</div>
+				<div class="col-md-12 animate-box">
+							<h2>Function to get list of trasnfers</h2>
+							<p>We can do that by using the get function again.</p>
+				</div>
+						<figure class="animate-box">
+							<img src="images/e7.png" alt="Image" class="img-responsive">
+						</figure>
+				<div class="col-md-12 animate-box">
+							<h2>Function to approve each trasnfer</h2>
+							<p>First we need to create a mapping to asign the values.</p>
+				</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e8.png" alt="" class="img-responsive">
+								<figcaption>to identify who does what</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e9.png" alt="" class="img-responsive">
+								<figcaption>function to approve with the require keword to verify that the transaction it has been done correctly</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e10.png" alt="" class="img-responsive">
+								<figcaption>To finally approve it</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>How to recieve ether for the wallet?</h2>
+							<p>We can start by creating a payable function with the keyword <b>receive</b>. Then we should implement access control, we need to restrict with modifiers. Remmember that after creating the modifier you need to attach it to the functions that need to be restricted.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e11.png" alt="" class="img-responsive">
+								<figcaption>To recieve the Ether</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e12.png" alt="" class="img-responsive">
+								<figcaption>Restricter modifier</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/e13.png" alt="" class="img-responsive">
+								<figcaption>Modifier attached</figcaption>
+							</figure>
+						</div>
+					</div>
+
+					</div>
+					
+				</div>
+			</article>
+		</div>
+	</div>
+    <div class="" style="background: #FEFCF2; margin-left: 15%;">
+        <div class="social-icons animate-box">
+              <ul>
+                <li>
+                  <a href="https://github.com/G-Ulrich5000"><img src="images/github.png" style="max-width: 20px;"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/portfolio.png" style="max-width: 20px;"></a>
+                </li>
+                <li>
+                  <a href="#" ><img src="images/why.png" style="max-width: 20px;"></a>
+                </li>
+              </ul>
+        </div>
+    </div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+

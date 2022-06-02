@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel = "icon" href =  "images/myblog.png" type = "image/x-icon">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon -->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+	<header id="fh5co-header">
+		
+		<div class="container-fluid">
+
+			<div class="row">
+				<!--
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				<ul class="fh5co-social">
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+				</ul>-->
+				<div class="media">
+		          <p>Blog designed by Guy Ulrich © 2022</p>
+		        </div>
+				<div class="col-lg-12 col-md-12 text-center">
+					<h1 id="fh5co-logo"><a href="index.html">My  Blog <sup><img src="images/myblog.png" style="max-width:80px;"></sup></a></h1>
+				</div>
+
+			</div>
+		
+		</div>
+
+	</header>
+	<div class="container-fluid">
+		<div class="row fh5co-post-entry single-entry">
+			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+				<figure class="animate-box">
+					<img src="images/d1.png" alt="Image" class="img-responsive">
+					<figcaption>Picture by <a href="https://docs.soliditylang.org/en/v0.8.14/">Solidity</a> is the official logotype.</a></figcaption>
+				</figure>
+				<span class="fh5co-meta animate-box">Web3</span>
+				<h2 class="fh5co-article-title animate-box"><a href="index.html">Everything about solidity</a></h2>
+				<span class="fh5co-meta fh5co-date animate-box">May 20th, 2022</span>
+				
+				<div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<h2>Solidity syntax</h2>
+							<p>Solidity allows you to write smart contracts in the blockchain, the syntax is very similar to javascript, but just the syntaxis, because solidity ends up being a limited programming compile language dedicated to specific usages.</p>
+							<p>The structure starts with SPDX license identifier, then the pragma statement that declares the version that you are going to use.</p>
+							<p></p>
+						</div>
+					</div>
+				<div class="col-md-12 animate-box">
+							<h2>Type of variables</h2>
+							<p>Fixed-size in memory, Variable size memory, this one is used when you are not sure about the size of the data, and user-defined data for costume the information.</p>
+							<h3>Examples for the fixed size memory:</h3>
+							<ul>
+								<li><b>boolean</b>, can be very useful and it can be equal to true or false.</li>
+								<li><b>uint</b> that stands for unsigned integer, this is very useful for transfer finances.</li>
+								<li><b>address </b>is useful for financial tranfers to name the recipient.</li>
+								<li>Finally the <b>bytes32</b> very used to manipulate strings in validations, for example to avoid content hevier than 32 bytes.</li>
+							</ul>
+							<h3>Variable size memory</h3>
+							<ul>
+								<li><b>string</b> is can be useful to name data.</li>
+								<li><b>bytes</b>, we have seen something like this before, but like the name says this one is variable and is not fixed, that is why it dosen't has the 32.</li>
+								<li><b>uint[] </b> this one is similar to the classic javascript arrays.</li>
+								<li>Finally the <b>mapping</b> this one is assosiative because it links value through keys.</li>
+							</ul>			
+							<h3>Variable size memory</h3>
+							<ul>
+								<li><b>sctruct</b> is similar to creating an object in javascript.</li>
+								<li><b>enum</b> to present wide options.</li>
+								<li><b>uint </b> this one is similar to the classic javascript arrays.</li>
+								<li>Finally the <b>mapping</b> this one is assosiative because it links value through keys.</li>
+							</ul>													
+						</div>
+						
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d2.png" alt="" class="img-responsive">
+								<figcaption>Fixed-size in memory</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d3.png" alt="" class="img-responsive">
+								<figcaption>Variable size memory</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d4.png" alt="" class="img-responsive">
+								<figcaption>user-defined data</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Main variables</h2>
+							<p>These are the must useful variables.</p>
+							<ul>
+								<li><b>msg.sender</b>, is the adress of the sender and is impossible to fake it.</li>
+								<li><b>msg.value</b>, this one is for declare how much ether is going to be sent.</li>
+								<li><b>now</b>, is a shorthand reference to the current's block timestamp.</li>
+							</ul>
+
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>¿What is a constructor?</h2>
+							<p></p>
+						</div>
+						<div class="row rp-b">
+							<div class="col-lg-6 col-md-12 animate-box">
+								<figure>
+									<img src="images/d5.png" alt="" class="img-responsive">
+									<figcaption></figcaption>
+								</figure>
+							</div>
+							<div class="col-lg-6 col-md-12 cp-l animate-box">
+								<p>Is a function that can only be one time after the deploy of the smart contract, where you iniatialize a variable.</p>
+							</div>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Functions</h2>
+							<p></p>
+						</div>
+						<div class="col-lg-8 cp-r animate-box">
+							<p>To manipulate your data is important to know how to create functions, you can create a value and then get it with a "getValue()", also use the <b>return</b> keyword to return the value, and inside of it to use add another return the final value. The set function modifies data in the blockchain and the get only reads it.</p>
+						</div>
+						<div class="col-lg-4 animate-box">
+							<div class="fh5co-highlight right">
+								<h4>Note</h4>
+								<p>The set function makes you pay a transaction fee of <b>gas</b> and the get function doesn't.</p>
+							</div>
+						</div>
+						<figure class="animate-box">
+							<img src="images/d6.png" alt="Image" class="img-responsive">
+						</figure>
+						<div class="col-md-12 animate-box">
+							<h3>Function visibility keywords</h3>
+							<p>Function visibility keywords allow you to manage the access to the functions. We must remmember that saying that a variable can't be read outside the smart contract is only in the context of the Ethereum Virtual Machine, because in the blockchain everything is public.</p>
+							<ul>
+								<li><b>private,</b> to call the function only from the inside of the smart contract.</li>
+								<li><b>internal,</b> this one can't be called from outside the contract either, but it can be called from a smart contract who inherit from the smart contract.</li>
+								<li><b>external,</b> this one can't be called from inside the smart contract.</li>
+								<li><b>public,</b> with this one you can call the function from inside and outside the smart contract.</li>
+							</ul>												
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Structure Controls</h2>
+							<p>Solidity shares many of the same controls structures used in others classic programming languages like javascript or python.</p>
+							<ul>
+								<li><b>if,</b> for conditions.</li>
+								<li><b>for,</b> for create a loop.</li>
+								<li><b>while,</b> the difference between the while and the for is that you are not sure how many times is going to run.</li>
+							</ul>												
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>How to create and manipulate arrays</h2>
+							<p>There is two type of arrays. First you need to declare the array and remmember you cannot manipulate arrays outside of a function.</p>
+							<ul>
+								<li><b>Storage Arrays,</b> these arrays are stored in the blockchains, there is dinamic size and fixed size in storage arrays.</li>
+								<li><b>Memory Arrays,</b> these arrays only store while they are being executed, and the size has to be specified</li>
+							</ul>
+							<p>In this arrays there is 5 type of oparations that you can apply:</p>	
+							<ul>
+								<li><b>crud</b></li>
+								<li><b>create</b></li>
+								<li><b>read</b></li>
+								<li><b>update</b></li>	
+								<li><b>delete</b></li>					
+							</ul>											
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d7.png" alt="" class="img-responsive">
+								<figcaption>Storage Array</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d8.png" alt="" class="img-responsive">
+								<figcaption>Memory Array</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Mapping</h2>
+							<p>With mapping is much eassier to retrieve a specific value. Mapping will allow you to make approvals, like when information through keys.</p>
+						</div>
+						<figure class="animate-box">
+							<img src="images/d9.png" alt="Image" class="img-responsive">
+						</figure>
+						<div class="col-md-12 animate-box">
+							<h2>Struct</h2>
+							<p>Are made to structurate the data with many fields. First we need to declare struct, then we should create instances for the storage of the structure, then we can create an array of it, or do a mapping of it.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d10.png" alt="" class="img-responsive">
+								<figcaption>Declaring the struct</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d11.png" alt="" class="img-responsive">
+								<figcaption>Doing an instance</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d12.png" alt="" class="img-responsive">
+								<figcaption>Array of the struct and mapping of it</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Events</h2>
+							<p>With events you can bring data from the smart contract to the frontend, first you need to declare the event and then you need to emit it inside of a function, the indexed keyword can be used for listen to a specific, but you must remmember that using a lot of indexed can make your smart contract quite expensive.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d13.png" alt="" class="img-responsive">
+								<figcaption>Declaring the event</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d14.png" alt="" class="img-responsive">
+								<figcaption>Emiting the event inside of a function</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>How to call functions of other smart contracts in solidity?</h2>
+							<p>The first thing is to get the interface of the other contract, then we need the adress of the other contract. You must remmember that if the function that you are calling has mistakes that will make an error propagation.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d15.png" alt="" class="img-responsive">
+								<figcaption>First contract</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d16.png" alt="" class="img-responsive">
+								<figcaption>Second contract</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>How to send Ether from a smart contract?</h2>
+							<p>Is very important to understan how the manipulation works, to send ether we need another adress, it could be antoher smart contract.The function specifies from wich address to send how much ether. To recieve ether you need to put the keyword payable.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d17.png" alt="" class="img-responsive">
+								<figcaption>This is the address where the ether goes</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d18.png" alt="" class="img-responsive">
+								<figcaption>This is the amount</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d19.png" alt="" class="img-responsive">
+								<figcaption>And here are the two ways to receive ether</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Keywords for handling errors in smart contracts</h2>
+							<ul>
+								<li><b>revert</b> this one is for errors that usually happens.</li>
+								<li><b>require()</b> this is for errors that should never happen.</li>
+								<li><b>assert()</b> which asserts that a condition is met during the computation process inside a function.</li>
+							</ul>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Function modifiers</h2>
+							<p>Allows you to run sume code before the execution of a function, this is good for validating arguments, like an access control. First we need to create a function, then we should create a modifier with the keyword <b>modifier</b>. You can only call the modifier from inside the smart contract. Then we need to attach the modifer to the function, so the modifer can be executed first and validate his argument. And even we could add more than one modifier.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d20.png" alt="" class="img-responsive">
+								<figcaption>function</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d21.png" alt="" class="img-responsive">
+								<figcaption>modifiers attached</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d22.png" alt="" class="img-responsive">
+								<figcaption>Access control</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-12 animate-box">
+							<h2>Inheritance</h2>
+							<p>This allows you to reuse some code. This could work by having to files, and asigning a parent and a child who is goin to inherit some code, this one could also manipulate the data calling the constructor. And the parent's constructor will be executed before the child's constructor. It is also important to say that you can have multiple inheritance.</p>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d22.png" alt="" class="img-responsive">
+								<figcaption>child</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-4 animate-box">
+							<figure>
+								<img src="images/d23.png" alt="" class="img-responsive">
+								<figcaption>parent</figcaption>
+							</figure>
+						</div>
+					</div>
+
+					</div>
+					
+				</div>
+			</article>
+		</div>
+	</div>
+    <div class="" style="background: #FEFCF2; margin-left: 15%;">
+        <div class="social-icons animate-box">
+              <ul>
+                <li>
+                  <a href="https://github.com/G-Ulrich5000"><img src="images/github.png" style="max-width: 20px;"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/portfolio.png" style="max-width: 20px;"></a>
+                </li>
+                <li>
+                  <a href="#" ><img src="images/why.png" style="max-width: 20px;"></a>
+                </li>
+              </ul>
+        </div>
+    </div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
